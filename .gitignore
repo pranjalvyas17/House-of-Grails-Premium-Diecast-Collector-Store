@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +40,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# original, pre-optimization 3D assets (kept locally as a backup only)
+/original-assets/
+
+# scratch scripts (e.g. mobile screenshot QA tooling)
+/.scripts-tmp/
+
+# local dev "database" — generated on first run from the seed catalogue,
+# then mutated by the admin panel. Not meant to be committed, same as you
+# wouldn't commit a local sqlite/dev.db file. See src/lib/server/jsonStore.ts.
+/data/*.json
+
+# admin-uploaded media (local dev storage) — see src/lib/server/mediaStorage.ts
+/public/uploads/
