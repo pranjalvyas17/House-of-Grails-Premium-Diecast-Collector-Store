@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# House of Grails
 
-## Getting Started
+> A cinematic digital experience for diecast collectors — built around rare finds, limited editions, automotive culture, events, and grail pieces.
 
-First, run the development server:
+House of Grails is a premium diecast collector storefront designed to feel more like an automotive brand and digital museum than a conventional ecommerce website.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The experience combines an interactive Porsche 911 3D hero, immersive product discovery, collector-focused collections, event showcases, community content, and a dedicated administrative CMS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Highlights
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Interactive 3D Porsche 911 hero experience
+- Cinematic loading and page transitions
+- Premium dark automotive-inspired UI
+- Latest Drops
+- Limited Editions
+- Grail Vault
+- Collector's Shelf
+- Brand Showcase
+- Daily Drop / scarcity experience
+- Collector Community Wall
+- Events & event-specific product collections
+- Product galleries with multiple images
+- Product search and search overlay
+- Shopping cart
+- Checkout interface
+- Collector testimonials
+- Responsive mobile-first experience
+- Dedicated `/admin` management portal
+- Product, event, brand and collection management
+- Homepage CMS
+- Media Library
+- Persistent local data storage
+- Persistent uploaded media
+- SEO and OpenGraph metadata
+- Product structured data
+- Accessibility-focused interactions
+- Reduced-motion support
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🖥️ Experience
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The storefront is designed around the idea that a diecast model is more than a product — it is a collectible object with history, rarity, and identity.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The visual direction combines:
 
-## Deploy on Vercel
+- Premium automotive design
+- Luxury museum aesthetics
+- Modern editorial layouts
+- Glassmorphism
+- Cinematic motion
+- Interactive 3D
+- Collector culture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The Porsche 911 acts as the visual centerpiece of the homepage and introduces the site's automotive identity.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- **Next.js 15**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **shadcn/ui**
+
+### Animation & Interaction
+
+- **Framer Motion**
+- **GSAP**
+- **Lenis**
+- **Swiper**
+
+### 3D
+
+- **Three.js**
+- **React Three Fiber**
+- **Drei**
+- GLB / glTF assets
+
+### State & Data
+
+- **Zustand**
+- Server Actions
+- JSON-based persistence layer
+- Service/repository architecture
+
+### Testing & QA
+
+- Production `next build`
+- `next start`
+- Browser-based testing
+- Playwright / Puppeteer where applicable
+- Accessibility testing with axe-core
+
+---
+
+# 📁 Project Structure
+
+A simplified overview:
+
+```text
+.
+├── public/
+│   ├── models/
+│   │   └── Porsche_911.glb
+│   ├── uploads/
+│   └── ...
+│
+├── src/
+│   ├── app/
+│   │   ├── (site)/
+│   │   │   ├── page.tsx
+│   │   │   ├── product/
+│   │   │   └── events/
+│   │   │
+│   │   └── admin/
+│   │
+│   ├── components/
+│   │   ├── Hero3D/
+│   │   ├── ProductCard/
+│   │   ├── Events/
+│   │   ├── GrailVault/
+│   │   ├── DailyDrop/
+│   │   ├── Community/
+│   │   └── ...
+│   │
+│   ├── lib/
+│   │   ├── admin/
+│   │   ├── data/
+│   │   ├── server/
+│   │   └── ...
+│   │
+│   └── ...
+│
+├── data/
+│   ├── products.json
+│   ├── events.json
+│   ├── brands.json
+│   └── ...
+│
+├── .env.example
+├── package.json
+├── next.config.*
+├── tailwind.config.*
+└── README.md
